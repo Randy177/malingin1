@@ -1,0 +1,140 @@
+body {
+    background-image: url(jugg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+ 
+}
+
+.grid-item.image1 {
+  background-color: black; 
+
+}
+
+.grid-item.image2 {
+  background-color: black; 
+}
+
+.grid-item.image3 {
+  background-color: black; 
+  background-size: contain;
+  
+}
+.grid-item.image4 {
+  background-color: black; 
+  
+}
+
+.grid-item.image5 {
+  background-color: black; 
+}
+
+.grid-item.image6 {
+  background-color: black; 
+}
+
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.grid-item h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: black;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.grid-item:hover h1 {
+    opacity: 1;
+}
+
+
+  .randy {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 2px solid darkgrey;
+    box-shadow: 0 0 50px darkgrey;
+}
+
+.randy li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.randy li a {
+    position: relative;
+    color: darkgrey;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+.randy li a:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background: darkgrey;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.randy li a:hover:before {
+    width: 100%;
+}
+
+.randy li.upward1 a:hover:before,
+.randy li.upward2 a:hover:before,
+.randy li.upward3 a:hover:before,
+.randy li.upward4 a:hover:before {
+    bottom: 0px;
+    opacity: 1;
+}
+

@@ -1,0 +1,70 @@
+body {
+    background-image: url('dota2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav {
+    backdrop-filter: blur(5px);
+    border-radius: 10px; border: 2px solid green;
+    box-shadow: 0 0 40px gray;
+    overflow: hidden;
+    margin-right: 29px;
+}
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: green;
+    
+}
+
+.content {
+  width: 80%; 
+  margin: 55px;
+  text-align: center; 
+  padding: 70px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px; border: 2px solid darkred;
+  box-shadow: 0 0 40px darkred;
+  margin-left: 84px;
+  transition: transform 1.3s;
+  transform: scale(1.1);
+}
+
+.homee1 {
+    max-width: 600px;
+}
+
+
+p {
+    color: green;
+    font-size: xx-large;
+}
+.players {
+  max-width: 30%;
+  border-radius: 10%;
+}
+p1 {
+    color: #000;
+}
